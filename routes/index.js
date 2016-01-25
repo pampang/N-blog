@@ -9,6 +9,7 @@ var md5 = require('../lib/md5');
 
 module.exports = function (app) {
   app.use(route.get('/', function* () {
+    debugger;
     var page = this.query.p ? parseInt(this.query.p) : 1;
     var posts = yield Post.getTen(this.mongo, null, page);
     var total = yield Post.count(this.mongo);

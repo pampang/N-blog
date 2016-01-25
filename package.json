@@ -1,7 +1,7 @@
 {
   "name": "N-blog",
   "version": "1.0.0",
-  "description": "N-blog for koa.",
+  "description": "N-blog for koa.修改mongodb的版本号。旧版本为1.4.5，会有bug，无法使用。",
   "main": "app.js",
   "scripts": {
     "start": "DEBUG=* node --harmony app"
@@ -14,17 +14,19 @@
     "koa-ejs": "1.1.2",
     "koa-flash": "0.0.3",
     "koa-logger": "1.2.2",
-    "koa-mongo": "0.2.0",
+    "koa-mongo": "^0.5.0",
     "koa-route": "2.1.0",
     "koa-scheme": "0.3.5",
     "koa-session": "2.0.0",
     "koa-static": "1.4.7",
-    "marked": "0.3.2",
+    "marked": "^0.3.5",
     "moment": "2.8.3",
-    "mongodb": "1.4.15"
+    "mongodb": "^2.1.4"
   },
   "devDependencies": {
-    "debug": "2.0.0"
+    "debug": "2.0.0",
+    "koa-mongo": "^0.5.0",
+    "marked": "^0.3.5"
   },
   "author": "nswbmw",
   "license": "MIT"

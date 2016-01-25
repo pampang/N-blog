@@ -3,10 +3,8 @@
     "name"        : "N-blog",
     "script"      : "app.js",
     "watch"       : "true",
-    "node_args"   : "--harmony",
     "env": {
-        "PORT": 3000,
-        "DEBUG": "*"
+        "PORT": 3000
     }
   }]
 }
